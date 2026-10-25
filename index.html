@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loja Mesquita · Celulares, Acessórios e Eletrodomésticos em São Geraldo do Baixio</title>
+<meta name="description" content="Mesquita Celulares e Acessórios, desde 2018 em São Geraldo do Baixio – MG. Celulares, acessórios, eletrodomésticos, bicicletas, artigos de presente e manutenção.">
+<meta property="og:title" content="Loja Mesquita · Celulares e Acessórios">
+<meta property="og:description" content="Os melhores da região. Celulares, acessórios, eletrodomésticos e muito mais em São Geraldo do Baixio – MG.">
+<meta property="og:image" content="img/fachada.jpg">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+:root{--amarelo:#ffd400;--amarelo-2:#ffe45c;--preto:#111;--preto-2:#1c1c1c;--cinza:#f4f4f2;--tinta:#151515;--suave:#5d5d5d;--raio:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Archivo",system-ui,sans-serif;color:var(--tinta);background:#fff;line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-weight:900;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase}
+h2{font-size:clamp(2rem,4.2vw,3.1rem)}
+.script{font-family:"Kaushan Script",cursive;text-transform:none;font-weight:400;letter-spacing:0}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.9rem}
+.kicker::before{content:"";width:22px;height:4px;background:var(--amarelo);border-radius:2px}
+.lead{color:var(--suave);font-size:1.07rem;max-width:58ch}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.6rem;border-radius:12px;font-weight:800;text-decoration:none;font-size:.98rem;transition:transform .2s,background .2s,color .2s;text-transform:uppercase;letter-spacing:.02em}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-am{background:var(--amarelo);color:var(--preto);box-shadow:0 12px 24px -12px rgba(255,212,0,.9)}
+.btn-am:hover{background:var(--amarelo-2);transform:translateY(-2px)}
+.btn-linha{border:2px solid currentColor}
+.btn-linha:hover{background:var(--amarelo);border-color:var(--amarelo);color:var(--preto)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(17,17,17,.94);backdrop-filter:blur(10px);color:#fff}
+.topo{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marca img{width:54px;height:54px;border-radius:50%;border:2px solid var(--amarelo)}
+.marca b{font-family:"Kaushan Script",cursive;font-weight:400;font-size:1.6rem;line-height:1}
+.marca small{display:block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amarelo);font-weight:700}
+nav{display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em;color:#ddd}
+nav a:hover{color:var(--amarelo)}
+nav .btn{padding:.65rem 1.1rem;font-size:.85rem}
+@media (max-width:920px){nav a:not(.btn){display:none}}
+@media (max-width:420px){nav .btn span{display:none}nav .btn{padding:.75rem}}
+
+/* hero */
+.hero{background:var(--preto);color:#fff;position:relative;overflow:hidden;padding:56px 0 90px}
+.hero::before{content:"";position:absolute;right:-12%;top:-30%;width:62%;height:160%;background:var(--amarelo);transform:skewX(-14deg);z-index:0}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.8rem);margin-bottom:1.1rem}
+.hero h1 .script{color:var(--amarelo);display:block;font-size:1.05em;margin-top:.1em}
+.hero .lead{color:#c9c9c9;margin-bottom:1.6rem}
+.cats{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin-bottom:2rem}
+.cats li{border:1px solid #3a3a3a;border-radius:999px;padding:.4rem .9rem;font-size:.84rem;font-weight:700;color:#eee}
+.acoes{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-linha{color:#fff}
+.vitrine{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end}
+.vitrine figure{border-radius:var(--raio);overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);border:4px solid var(--preto)}
+.vitrine img{width:100%;height:100%;object-fit:cover}
+.vitrine .v1{aspect-ratio:3/5}
+.vitrine .v2{aspect-ratio:3/4;margin-bottom:40px}
+.selo-desde{position:absolute;left:-26px;top:20px;background:var(--preto);color:var(--amarelo);border:3px solid var(--amarelo);border-radius:50%;width:110px;height:110px;display:grid;place-items:center;text-align:center;font-weight:900;line-height:1;transform:rotate(-10deg)}
+.selo-desde small{display:block;font-size:.7rem;letter-spacing:.14em;color:#fff}
+.selo-desde b{font-size:1.7rem}
+@media (max-width:900px){.hero{padding:34px 0 60px}.hero::before{right:-40%;top:auto;bottom:-6%;height:34%;width:120%}.hero-grid{grid-template-columns:1fr}.vitrine{width:min(420px,100%);margin-inline:auto}.selo-desde{left:-6px;width:92px;height:92px}.selo-desde b{font-size:1.4rem}}
+
+section{padding:92px 0}
+.cab{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.cab .lead{max-width:46ch}
+
+/* categorias */
+.grid-cat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cat{position:relative;border-radius:var(--raio);overflow:hidden;background:var(--cinza);padding:26px 24px 24px;min-height:230px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .25s,box-shadow .25s}
+.cat:hover{transform:translateY(-5px);box-shadow:0 26px 46px -28px rgba(0,0,0,.5)}
+.cat .ico{position:absolute;top:22px;left:24px;width:52px;height:52px;border-radius:14px;background:var(--preto);color:var(--amarelo);display:grid;place-items:center}
+.cat .ico svg{width:26px;height:26px}
+.cat h3{font-size:1.45rem;margin-bottom:.35rem}
+.cat p{color:var(--suave);font-size:.95rem}
+.cat.destaque{background:var(--amarelo)}
+.cat.destaque p{color:#3c3500}
+.cat.escuro{background:var(--preto);color:#fff}
+.cat.escuro p{color:#bbb}
+.cat.escuro .ico{background:var(--amarelo);color:var(--preto)}
+@media (max-width:900px){.grid-cat{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.grid-cat{grid-template-columns:1fr}.cat{min-height:200px}}
+
+/* vitrine de celulares */
+.faixa{background:var(--preto);color:#fff}
+.faixa .lead{color:#bdbdbd}
+.cel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cel-grid figure{border-radius:16px;overflow:hidden;aspect-ratio:3/4;background:#222}
+.cel-grid img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.cel-grid figure:hover img{transform:scale(1.05)}
+@media (max-width:800px){.cel-grid{grid-template-columns:1fr 1fr}}
+
+/* VIP */
+.vip{background:var(--amarelo);padding:64px 0}
+.vip-box{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+.vip h2{font-size:clamp(1.8rem,3.6vw,2.8rem)}
+.vip p{color:#3c3500;font-size:1.06rem;margin-top:.8rem;max-width:56ch}
+.vip .btn{background:var(--preto);color:var(--amarelo);justify-self:end}
+.vip .btn:hover{transform:translateY(-2px)}
+@media (max-width:800px){.vip-box{grid-template-columns:1fr}.vip .btn{justify-self:start}}
+
+/* loja */
+.loja-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.fotos3{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:14px}
+.fotos3 figure{border-radius:var(--raio);overflow:hidden}
+.fotos3 img{width:100%;height:100%;object-fit:cover}
+.fotos3 .f1{grid-row:span 2;aspect-ratio:9/16}
+.fotos3 .f2,.fotos3 .f3{aspect-ratio:4/5}
+.vant{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:1.6rem 0 2rem}
+.vant li{display:flex;gap:12px;align-items:flex-start;background:var(--cinza);border-radius:14px;padding:14px}
+.vant svg{flex:none;width:24px;height:24px;color:var(--preto);background:var(--amarelo);border-radius:8px;padding:4px;box-sizing:content-box}
+.vant b{display:block;font-size:.97rem}
+.vant span{color:var(--suave);font-size:.88rem}
+@media (max-width:900px){.loja-grid{grid-template-columns:1fr}.fotos3{max-width:480px}}
+@media (max-width:480px){.vant{grid-template-columns:1fr}}
+
+/* avaliações */
+.aval{background:var(--cinza)}
+.aval-grid{display:grid;grid-template-columns:.8fr 1fr 1fr;gap:20px;align-items:stretch}
+.nota{background:var(--preto);color:#fff;border-radius:var(--raio);padding:30px;display:flex;flex-direction:column;justify-content:center}
+.nota strong{font-size:4.2rem;font-weight:900;line-height:1;color:var(--amarelo)}
+.nota .est{color:var(--amarelo);letter-spacing:3px;font-size:1.2rem;margin:.4rem 0}
+.nota span{color:#bbb}
+.dep{background:#fff;border-radius:var(--raio);padding:28px;display:flex;flex-direction:column}
+.dep .est{color:#f4b400;letter-spacing:2px}
+.dep p{font-size:1.25rem;font-weight:600;margin:.7rem 0 1.2rem;flex:1}
+.dep footer{font-weight:800;display:flex;gap:10px;align-items:center}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--amarelo);color:var(--preto);font-weight:900}
+.dep footer small{display:block;color:var(--suave);font-weight:500;font-size:.78rem}
+@media (max-width:900px){.aval-grid{grid-template-columns:1fr}}
+
+/* contato */
+.contato{background:var(--preto);color:#fff}
+.contato-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:44px}
+.info{display:grid;gap:12px;margin:1.6rem 0 2rem}
+.info>a,.info>div{display:flex;gap:14px;align-items:flex-start;text-decoration:none;background:var(--preto-2);border:1px solid #2c2c2c;border-radius:14px;padding:14px 16px;transition:border-color .2s}
+.info>a:hover{border-color:var(--amarelo)}
+.info svg{flex:none;width:22px;height:22px;color:var(--amarelo);margin-top:2px}
+.info b{display:block}
+.info span{color:#bdbdbd;font-size:.93rem}
+.horas{display:grid;grid-template-columns:auto auto;gap:2px 18px;font-size:.92rem;color:#bdbdbd;margin-top:4px}
+.mapa{border-radius:var(--raio);overflow:hidden;min-height:420px;background:#222;border:3px solid var(--amarelo)}
+.mapa iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+@media (max-width:900px){.contato-grid{grid-template-columns:1fr}}
+
+.rodape{background:#000;color:#9a9a9a;padding:26px 0;font-size:.88rem;border-top:4px solid var(--amarelo)}
+.rodape .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.rodape img{width:48px;height:48px;border-radius:50%}
+.rodape a{color:#fff;font-weight:800;text-decoration:none}
+
+.zap{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.45);transition:transform .2s}
+.zap:hover{transform:scale(1.07)}
+.zap svg{width:32px;height:32px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.on{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.41 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.1-1.47-1.1-2.81s.7-2 .95-2.27c.25-.27.54-.34.72-.34h.52c.17 0 .4-.06.62.47.24.56.79 1.92.86 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46l-.41.48c-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.89 1.04.93 1.92 1.22 2.19 1.35.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.33Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></g></symbol>
+  <symbol id="i-head" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></g></symbol>
+  <symbol id="i-fridge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M5 10h14M8 5v2M8 13v3"/></g></symbol>
+  <symbol id="i-bike" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="16.5" r="3.5"/><circle cx="18.5" cy="16.5" r="3.5"/><path d="M5.5 16.5 9 9h6l3.5 7.5M9 9 12 16.5h-1M14 5h2l1 4"/></g></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13M12 8S10 3 7.5 4.5 9 8 12 8Zm0 0s2-5 4.5-3.5S15 8 12 8Z"/></g></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.4-.4-2.6 2.4-2.4Z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></g></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></g></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/></g></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18"/></g></symbol>
+  <symbol id="i-recycle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 19H4l3-5M17 19h3l-3-5M9 5l3-3 3 3M12 2v6M7 14l-2-3.5L9 4M17 14l2-3.5L15 4M7 19h10"/></g></symbol>
+  <symbol id="i-access" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="1.8"/><path d="M9 21a5 5 0 1 1 6.5-7.5M11 7v6h5l2 5"/></g></symbol>
+</svg>
+
+<header>
+  <div class="wrap topo">
+    <a class="marca" href="#inicio" aria-label="Loja Mesquita — início"><img src="img/logo.png" alt="" width="54" height="54"><span><b>Mesquita</b><small>Celulares e acessórios</small></span></a>
+    <nav aria-label="Principal">
+      <a href="#produtos">Produtos</a>
+      <a href="#loja">A loja</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-am" href="https://wa.me/5533988543969?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Loja%20Mesquita." target="_blank" rel="noopener"><svg><use href="#i-zap"/></svg><span>WhatsApp</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker reveal">São Geraldo do Baixio · MG</span>
+        <h1 class="reveal d1">Os melhores da região <span class="script">estão na Mesquita</span></h1>
+        <p class="lead reveal d2">Celulares, acessórios que completam seu dia e eletrodomésticos para a sua casa, no Centro de São Geraldo do Baixio.</p>
+        <ul class="cats reveal d2"><li>Celulares</li><li>Acessórios</li><li>Eletrodomésticos</li><li>Bicicletas</li><li>Presentes</li><li>Manutenção</li></ul>
+        <div class="acoes reveal d3">
+          <a class="btn btn-am" href="https://wa.me/5533988543969?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Loja%20Mesquita." target="_blank" rel="noopener"><svg><use href="#i-zap"/></svg>Fale com a gente</a>
+          <a class="btn btn-linha" href="#produtos">Ver produtos</a>
+        </div>
+      </div>
+      <div class="vitrine reveal d1">
+        <figure class="v1"><img src="img/fachada.jpg" alt="Fachada da Loja Mesquita com o logo e bicicletas elétricas na calçada" width="788" height="1400"></figure>
+        <figure class="v2"><img src="img/iphone.jpg" alt="iPhone na caixa em frente à parede amarela da loja" width="768" height="1024"></figure>
+        <div class="selo-desde"><div><small>DESDE</small><b>2018</b></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <div class="wrap">
+      <div class="cab">
+        <div><span class="kicker reveal">Produtos e serviços</span><h2 class="reveal d1">Tudo em <span class="script">um só lugar</span></h2></div>
+        <p class="lead reveal d2">Do celular novo ao presente certo, passando pela geladeira e pela bicicleta.</p>
+      </div>
+      <div class="grid-cat">
+        <div class="cat destaque reveal"><div class="ico"><svg><use href="#i-phone"/></svg></div><h3>Celulares</h3><p>Smartphones Xiaomi, Redmi, iPhone, Samsung e celulares básicos.</p></div>
+        <div class="cat reveal d1"><div class="ico"><svg><use href="#i-head"/></svg></div><h3>Acessórios</h3><p>Capinhas e acessórios que completam seu dia.</p></div>
+        <div class="cat escuro reveal d2"><div class="ico"><svg><use href="#i-fridge"/></svg></div><h3>Eletrodomésticos</h3><p>Geladeiras, fogões, micro-ondas, TVs e eletroportáteis para a sua casa.</p></div>
+        <div class="cat escuro reveal"><div class="ico"><svg><use href="#i-bike"/></svg></div><h3>Bicicletas e elétricos</h3><p>Bicicletas, bicicletas elétricas e triciclos elétricos.</p></div>
+        <div class="cat reveal d1"><div class="ico"><svg><use href="#i-gift"/></svg></div><h3>Artigos de presente</h3><p>Copos, garrafas e itens para presentear quem você gosta.</p></div>
+        <div class="cat destaque reveal d2"><div class="ico"><svg><use href="#i-tool"/></svg></div><h3>Manutenção</h3><p>Serviço de reparos para o seu aparelho.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faixa">
+    <div class="wrap">
+      <div class="cab">
+        <div><span class="kicker reveal">Vitrine</span><h2 class="reveal d1">Chegou <span class="script" style="color:var(--amarelo)">na loja</span></h2></div>
+        <p class="lead reveal d2">Alguns dos aparelhos que passaram pela nossa vitrine. Consulte disponibilidade pelo WhatsApp.</p>
+      </div>
+      <div class="cel-grid">
+        <figure class="reveal"><img src="img/celular-1.jpg" alt="Smartphone Redmi verde sobre a caixa" loading="lazy"></figure>
+        <figure class="reveal d1"><img src="img/celular-2.jpg" alt="Smartphone Redmi azul sobre a caixa" loading="lazy"></figure>
+        <figure class="reveal d2"><img src="img/celular-3.jpg" alt="Smartphone Redmi verde-água com câmera circular" loading="lazy"></figure>
+        <figure class="reveal d3"><img src="img/loja-celulares.jpg" alt="Celulares Xiaomi em exposição no balcão da loja" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="vip">
+    <div class="wrap vip-box">
+      <div>
+        <h2 class="reveal">Faça parte do <span class="script">Grupo VIP</span></h2>
+        <p class="reveal d1">Quem está no Grupo VIP recebe as ofertas em primeira mão e tem prioridade nas nossas ações especiais.</p>
+      </div>
+      <a class="btn reveal d2" href="https://wa.me/5533988543969?text=Ol%C3%A1!%20Quero%20entrar%20no%20Grupo%20VIP%20da%20Loja%20Mesquita." target="_blank" rel="noopener"><svg><use href="#i-zap"/></svg>Quero entrar</a>
+    </div>
+  </section>
+
+  <section id="loja">
+    <div class="wrap loja-grid">
+      <div class="fotos3 reveal">
+        <figure class="f1"><img src="img/loja-interior.jpg" alt="Interior da loja com parede de capinhas e caixas de produtos" loading="lazy"></figure>
+        <figure class="f2"><img src="img/loja-acessorios.jpg" alt="Prateleiras com copos e garrafas de times de futebol" loading="lazy"></figure>
+        <figure class="f3"><img src="img/loja-celulares.jpg" alt="Balcão com celulares em exposição" loading="lazy"></figure>
+      </div>
+      <div>
+        <span class="kicker reveal">A loja</span>
+        <h2 class="reveal d1">Desde 2018 no <span class="script">Centro</span></h2>
+        <p class="lead reveal d2" style="margin-top:.9rem">A Loja Mesquita está sempre buscando os melhores parceiros e mais qualidade para os clientes de São Geraldo do Baixio e região.</p>
+        <ul class="vant">
+          <li class="reveal"><svg><use href="#i-bag"/></svg><div><b>Compras na loja</b><span>e retirada no balcão</span></div></li>
+          <li class="reveal d1"><svg><use href="#i-truck"/></svg><div><b>Entrega</b><span>Consulte pelo WhatsApp</span></div></li>
+          <li class="reveal"><svg><use href="#i-card"/></svg><div><b>Pagamento</b><span>Crédito, débito e aproximação</span></div></li>
+          <li class="reveal d1"><svg><use href="#i-wifi"/></svg><div><b>Wi-Fi grátis</b><span>para os clientes</span></div></li>
+          <li class="reveal"><svg><use href="#i-access"/></svg><div><b>Acessível</b><span>Entrada e estacionamento</span></div></li>
+          <li class="reveal d1"><svg><use href="#i-recycle"/></svg><div><b>Reciclagem</b><span>Recebemos baterias</span></div></li>
+        </ul>
+        <a class="btn btn-linha reveal d2" href="https://www.instagram.com/celularesmesquita/" target="_blank" rel="noopener"><svg><use href="#i-insta"/></svg>@celularesmesquita</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="avaliacoes" class="aval">
+    <div class="wrap">
+      <div class="cab"><div><span class="kicker reveal">Avaliações</span><h2 class="reveal d1">Quem compra, <span class="script">recomenda</span></h2></div></div>
+      <div class="aval-grid">
+        <div class="nota reveal"><strong>5,0</strong><span class="est" aria-hidden="true">★★★★★</span><span>13 avaliações no Google</span></div>
+        <article class="dep reveal d1"><span class="est" aria-label="5 estrelas">★★★★★</span><p>“Ótimos produtos e bons preços! Recomendo.”</p><footer><span class="av">C</span><span>Carlos Vinícius Bulhosa Barcelos<small>Google</small></span></footer></article>
+        <article class="dep reveal d2"><span class="est" aria-label="5 estrelas">★★★★★</span><p>“Ótima qualidade e atendimento.”</p><footer><span class="av">R</span><span>Raiane Santos<small>Google</small></span></footer></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="wrap contato-grid">
+      <div>
+        <span class="kicker reveal">Contato</span>
+        <h2 class="reveal d1">Vem pra <span class="script" style="color:var(--amarelo)">Mesquita</span></h2>
+        <div class="info">
+          <a class="reveal" href="https://wa.me/5533988543969?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Loja%20Mesquita." target="_blank" rel="noopener"><svg><use href="#i-zap"/></svg><div><b>WhatsApp</b><span>(33) 98854-3969</span></div></a>
+          <a class="reveal d1" href="https://www.google.com/maps/search/?api=1&query=Mesquita+Celulares+e+Acessorios+S%C3%A3o+Geraldo+do+Baixio" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><div><b>Endereço</b><span>R. Francisco Mariano, 113 – Loja 4<br>Centro, São Geraldo do Baixio – MG, 35258-000</span></div></a>
+          <div class="reveal d2"><svg><use href="#i-clock"/></svg><div><b>Horários</b><div class="horas"><span>Seg a Sex</span><span>8h às 12h · 13h às 18h</span><span>Sábado</span><span>8h às 12h</span><span>Domingo</span><span>Fechado</span></div></div></div>
+          <a class="reveal d3" href="https://www.instagram.com/celularesmesquita/" target="_blank" rel="noopener"><svg><use href="#i-insta"/></svg><div><b>Instagram</b><span>@celularesmesquita</span></div></a>
+        </div>
+        <a class="btn btn-am reveal" href="https://wa.me/5533988543969?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Loja%20Mesquita." target="_blank" rel="noopener"><svg><use href="#i-zap"/></svg>Chamar no WhatsApp</a>
+      </div>
+      <div class="mapa reveal d1">
+        <iframe title="Mapa: Mesquita Celulares e Acessórios, São Geraldo do Baixio – MG" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Mesquita+Celulares+e+Acessorios,+R.+Francisco+Mariano,+113,+S%C3%A3o+Geraldo+do+Baixio+-+MG&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <img src="img/logo.png" alt="Loja Mesquita" width="48" height="48">
+    <span>© <span id="ano">2026</span> Mesquita Celulares e Acessórios · São Geraldo do Baixio – MG</span>
+    <span>Site por <a href="https://firmiano.com.br" target="_blank" rel="noopener">Firmiano</a></span>
+  </div>
+</footer>
+
+<a class="zap" href="https://wa.me/5533988543969?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Loja%20Mesquita." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg><use href="#i-zap"/></svg></a>
+
+<script>
+document.getElementById('ano').textContent=new Date().getFullYear();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
